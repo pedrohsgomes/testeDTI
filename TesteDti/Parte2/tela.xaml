@@ -1,0 +1,125 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TesteDti.Parte2"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="TesteDti.Tela"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="950">
+    <Grid Background="#FFE6E6E6">
+        <GroupBox Header="" HorizontalAlignment="Left" Height="83" Margin="10,10,0,0" VerticalAlignment="Top" Width="930" BorderBrush="{x:Null}" Background="#FFF7F7F7">
+            <Label Content="Listar Bloqueio" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="33" Width="231" FontWeight="Bold" FontFamily="Sitka Small" Foreground="#FF645B5B" FontSize="20"/>
+        </GroupBox>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="180" Margin="10,123,0,0" VerticalAlignment="Top" Width="930" BorderBrush="{x:Null}" Background="#FFF7F7F7" Grid.Row="2" Grid.Column="2">
+            <Grid Grid.Column="0" Margin="10,10,10,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="75px" />
+                    <ColumnDefinition Width="200px" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="0" Margin="0,0,5,10" Content="Cliente:"/>
+                <Label Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="3" Margin="0,0,5,10" Content="Contrato:"/>
+                <Label Grid.Row="0" Grid.Column="5" Margin="0,0,5,10" Content="Pedido:"/>
+                <Label Grid.Row="0" Grid.Column="6" Margin="0,0,5,10" Content="Item:"/>
+                <Label Grid.Row="0" Grid.Column="7" Margin="0,0,5,10" Content="Sequência:"/>
+                <Label Grid.Row="0" Grid.Column="8" Margin="0,0,5,10"/>
+                <Label Grid.Column="9" HorizontalAlignment="Left" Margin="70,1,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF2EABDA" Content="+ Cadastrar Bloqueio" Cursor="Arrow"/>
+
+                <TextBox Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0" Margin="0,0,5,10" />
+                <TextBox Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="3" Margin="0,0,5,10" />
+                <TextBox Grid.Row="1" Grid.Column="5" Margin="0,0,5,10" IsEnabled="False" />
+                <TextBox Grid.Row="1" Grid.Column="6" Margin="0,0,5,10" IsEnabled="False" />
+                <TextBox Grid.Row="1" Grid.Column="7" Margin="0,0,5,10" IsEnabled="False" />
+                <CheckBox Grid.Row="1" Grid.Column="8" Margin="0,0,5,10" Content="Bloqueios Vigentes"/>
+
+                <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="10" Margin="0,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="75px" />
+                        <ColumnDefinition Width="200px" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" Margin="0,0,5,10" Content="Serviço / Despesas:"/>
+                    <Label Grid.Row="0" Grid.Column="2" Margin="0,0,5,10" Content="SS:"/>
+                    <Label Grid.Row="0" Grid.Column="3" Margin="0,0,5,10" Content="Placa:"/>
+                    <Label Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="4" Margin="0,0,5,10" Content="Periodo de Cadastro:"/>
+                    <Label Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="6" Margin="0,0,5,10" Content="Periodo de Referencia:"/>
+
+                    <TextBox Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" Margin="0,0,5,10" />
+                    <TextBox Grid.Row="1" Grid.Column="2" Margin="0,0,5,10" />
+                    <TextBox Grid.Row="1" Grid.Column="3" Margin="0,0,5,10" />
+                    <DatePicker Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="4" Margin="0,0,5,10" />
+                    <DatePicker Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="6" Margin="0,0,5,10" />
+
+                    <Button Grid.Row="1" Grid.Column="9" HorizontalAlignment="Left" Width="80" Background="#FF59BD5D" Foreground="White" Content="Pesquisar"/>
+                    <Button Grid.Row="1" Grid.Column="9" HorizontalAlignment="Right" Width="80" Background="{x:Null}" Content="Limpar"/>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="332" Margin="10,308,0,0" VerticalAlignment="Top" Width="930" BorderBrush="{x:Null}" Background="#FFF7F7F7">
+
+            <Grid Grid.Column="0" Margin="10,10,10,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="9" HorizontalAlignment="Left" Width="80" Background="#FFFF2525" Foreground="White" Content="x Desbloquear"/>
+                <Button Grid.Row="0" Grid.Column="9" HorizontalAlignment="Right" Width="80" Background="#FF0C2F6C" Content="Exportar Excel"/>
+                <DataGrid Grid.Row="1" Grid.Column="0" Name="dados" ItemsSource="{Binding Resultados}">
+
+                    <DataGrid.Columns>
+                        <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Bloqueado por"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Cliente"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Contrato"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Placa"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Data Disponibilização"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="SS"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Serviço/Despesa"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Bloquear"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Início"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Data Limite"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Geração Fatura"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Solicitante"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Justificativa"/>
+                        <DataGridHyperlinkColumn Binding="{x:Null}" ContentBinding="{x:Null}" ClipboardContentBinding="{x:Null}"/>
+                    </DataGrid.Columns>
+                    <System:Object/>
+                    <System:Object/>
+                </DataGrid>
+
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+
+</UserControl>

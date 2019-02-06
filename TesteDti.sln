@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68EE56C9-EEDE-4526-89FB-45AB56AA89F6}"
+	ProjectSection(SolutionItems) = preProject
+		TesteDti\Resources\Modelo.png = TesteDti\Resources\Modelo.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteDti", "TesteDti\TesteDti.csproj", "{A7716FB3-F299-4002-9A88-BE6E50CB107A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7716FB3-F299-4002-9A88-BE6E50CB107A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7716FB3-F299-4002-9A88-BE6E50CB107A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7716FB3-F299-4002-9A88-BE6E50CB107A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7716FB3-F299-4002-9A88-BE6E50CB107A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13A3C2E6-2720-4DC5-8FD1-6771CED97C19}
+	EndGlobalSection
+EndGlobal
